@@ -15,8 +15,8 @@ class AuthController extends GetxController {
   Future<void> login() async {
     isLoading.value = true;
 
-    final url =
-        Uri.parse("http://127.0.0.1:8000/api/v1/auth/login"); // Laravel API
+    final url = Uri.parse(
+        "http://localhost/lawcrm-api/public/api/v1/auth/login"); // Laravel API
 
     final response = await http.post(
       url,
